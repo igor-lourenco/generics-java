@@ -21,7 +21,7 @@ public class Main {
 		CaixaObjeto caixa3 = new CaixaObjeto();
 		caixa3.setObj(2.3); 
 		
-		Integer valor3 = (Integer) caixa2.getObj();   // Vai lançar exceção por tentar fazer casting de Double para Integer
+//		Integer valor3 = (Integer) caixa2.getObj();   // Vai lançar exceção por tentar fazer casting de Double para Integer
 		
 	}
 }
