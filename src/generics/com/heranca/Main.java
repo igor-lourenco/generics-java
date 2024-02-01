@@ -4,6 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+//		Resolvendo o tipo generico no momento da herança
 		CaixaInt1 caixa1 = new CaixaInt1();
 		
 		caixa1.setObj((20 + 3));
@@ -19,6 +20,25 @@ public class Main {
 		Integer valor2 = caixa2.getObj() + caixa3.getObj();
 		
 		System.out.println("Soma 2: " + valor2);
+		
+		
+//		Resolvendo o tipo generico no momento da instancia
+		CaixaInt2<String> caixa4 = new CaixaInt2<>();
+		CaixaInt2<String> caixa5 = new CaixaInt2<>();
+		caixa4.setObj("Olá ");
+		caixa5.setObj("Mundo!");
+		
+		String valor3 = caixa4.getObj() + caixa5.getObj();
+		
+		System.out.println("Valor 3: " + valor3);
+		
+		CaixaInt2<Double> caixa6 = new CaixaInt2<>();
+		caixa6.setObj(6.5 + 10.3);
+		
+		Double valor4 = caixa6.getObj(); 
+		
+		System.out.println("Soma 4: " + valor4);
+		
 		
 		//Resolvendo o tipo generico no momento da herança
 		
