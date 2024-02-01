@@ -1,5 +1,10 @@
 package generics.com.heranca;
 
+import java.util.Arrays;
+import java.util.List;
+
+import generics.utils.ListaUtil;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -49,6 +54,35 @@ public class Main {
 		Double valor5 = caixa7.getObj(); 
 		
 		System.out.println("Soma 5: " + valor5);
+		
+//		===================================
+		List<String> langs = Arrays.asList("JS", "PHP", "Java", "C++");
+		List<Integer> nums = Arrays.asList(1,2,3,4,5,6);
+		
+		String ultimaLinguagem1 = (String) ListaUtil.getUltimo1(langs); // usando metodo sem ser generico
+		System.out.println("Ultima linguagem: " + ultimaLinguagem1);
+
+		Integer ultimaNumero1 = (Integer) ListaUtil.getUltimo1(nums);
+		System.out.println("Ultimo Numero: " + ultimaNumero1);
+		
+		langs.add("Python");
+		nums.add(7);
+		
+		String ultimaLinguagem2 = ListaUtil.getUltimo2(langs);         // usando metodo generico
+		System.out.println("Ultima linguagem: " + ultimaLinguagem2);
+
+		Integer ultimaNumero2 = ListaUtil.getUltimo2(nums);
+		System.out.println("Ultimo Numero: " + ultimaNumero2);
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 	
