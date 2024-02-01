@@ -40,8 +40,22 @@ public class Main {
 		System.out.println("Soma 4: " + valor4);
 		
 		
-		//Resolvendo o tipo generico no momento da herança
+		//Resolvendo o tipo generico no momento da herança com restrição
+		CaixaNumero<Double> caixa7 = new CaixaNumero<>();
+		CaixaNumero<Integer> caixa8 = new CaixaNumero<>();
+		caixa8.setObj(35);
+		caixa7.setObj(6.5 + 10.3 + caixa8.getObj());
+		
+		Double valor5 = caixa7.getObj(); 
+		
+		System.out.println("Soma 5: " + valor5);
 		
 	}
+	
+	
+	
+	
+	
+	
 	
 }
